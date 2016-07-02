@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>html bootstrap</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>统一建模语言测试</h1>
+        <p class="lead">考试科目: 统一建模语言UML 　时间: 100分钟</p>
+        <div class="row">
+            <span class="col-lg-2"> <h4>班级:</h4><input type="text" class="form-control" aria-label="..."></span>
+            <span class="col-lg-2"> <h4>学号:</h4><input type="text" class="form-control" aria-label="..."></span>
+            <span class="col-lg-2"> <h4>姓名:</h4><input type="text" class="form-control" aria-label="..."></span>
+            <span class="col-lg-2"> <h4>得分:</h4><span id="result"><input type="text" class="form-control" aria-label="..." ></span></span>
+        </div>
+    </div>
+    <div class="row">
+        <h3>一.填空题</h3>
+        <div class="col-lg-5">
+            <h4>1. UML 的中文全称是:</h4><input type="text" class="form-control" id="answer1" aria-label="...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+
+            <h4>2. 对象最突出的特征是:</h4>
+            <input type="text" class="form-control" id="answer2" aria-label="...">
+        </div>
+        　
+        <div class="col-lg-3">
+
+            <h4>&nbsp;</h4>
+            <input type="text" class="form-control" id="answer3" aria-label="...">
+        </div>
+        <div class="col-lg-3">
+
+            <h4>&nbsp;</h4>
+            <input type="text" class="form-control" id="answer4" aria-label="...">
+        </div>
+    </div>
+
+    <div class="row">
+        <h3>二：选择题</h3>
+        <div class="col-lg-5">
+            <h3>1.UML 与软件工程的关系是:</h3>
+            <p>
+                <input type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="A">
+                (A)UML 就是软件工程
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="B">
+                (B)UML 参与到软件工程中软件开发过程的几个阶段
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="C">
+                (C)UML 与软件工程无关
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="D">
+                (D)UML 是软件工程的一部分
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <h3>2.Java 语言支持:</h3>
+            <p>
+                <input type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="A">
+                (A)单继承
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions2" id="inlineRadio6" value="B">
+                (B)多继承
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions2" id="inlineRadio7" value="C">
+                (C)单继承和多继承都支持
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions2" id="inlineRadio8" value="D">
+                (D)单继承和多继承都不支持
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <h3>3. 用例的粒度分为以下哪三种:</h3>
+            <p>
+                <input type="checkbox" name="inlineRadioOptions3" id="inlineRadio9" value="A">
+                (A)概述级
+            </p>
+            <p>
+                <input type="checkbox" name="inlineRadioOptions3" id="inlineRadio10" value="B">
+                (B)需求级
+            </p>
+            <p>
+                <input type="checkbox" name="inlineRadioOptions3" id="inlineRadio11" value="C">
+                (C)用户目标级
+            </p>
+            <p>
+                <input type="checkbox" name="inlineRadioOptions3" id="inlineRadio12" value="D">
+                (D)子功能级
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3>4. 类图由以下哪三部分组成:</h3>
+            <p>
+                <input type="checkbox" name="inlineRadioOptions4" id="inlineRadio13" value="A">
+                (A)名称(Name)
+            </p>
+            <p>
+                <input type="checkbox" name="inlineRadioOptions4" id="inlineRadio14" value="B">
+                (B)属性(Attribute)
+            </p>
+            <p>
+                <input type="checkbox" name="inlineRadioOptions4" id="inlineRadio15" value="C">
+                (C)操作(Operation)
+            </p>
+            <p>
+                <input type="checkbox" name="inlineRadioOptions4" id="inlineRadio16" value="D">
+                (D)方法(Function)
+            </p>
+        </div>
+        <div class="col-lg-5">
+            <h3>5.下列说法正确的有:</h3>
+            <p>
+                <input type="radio" name="inlineRadioOptions5" id="inlineRadio17" value="A">
+                (A)class中的constructor不可省略
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions5" id="inlineRadio18" value="B">
+                (B) constructor必须与class同名，但方法不能与class同名
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions5" id="inlineRadio19" value="C">
+                (C)constructor在一个对象被new时执行
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions5" id="inlineRadio20" value="D">
+                (D)单继承和多继承都不支持
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <h3>6. 类和对象的关系:</h3>
+            <p>
+                <input type="radio" name="inlineRadioOptions6" id="inlineRadio21" value="A">
+                (A)关联和链
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions6" id="inlineRadio22" value="B">
+                (B)用例者和参与者
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions6" id="inlineRadio23" value="C">
+                (C)包和类图
+            </p>
+            <p>
+                <input type="radio" name="inlineRadioOptions6" id="inlineRadio24" value="D">
+                (D)聚集和组图
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <h3>四.判断题</h3>
+        <div class="col-lg-5">
+            <p>1. 用例图只是用于和客户交流和沟通的,用于确定需求。</p>
+            <input type="radio" name="topic9" value="错"/>错&nbsp;&nbsp;
+            <input type="radio" name="topic9" value="对"/>对
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-5">
+            <p>2. 在状态图中,终止状态在一个状态图中允许有任意多个。</p>
+            <input type="radio" name="topic10" value="错"/>错&nbsp;&nbsp;
+            <input type="radio" name="topic10" value="对"/>对
+        </div>
+    </div>
+    <div class="row">
+        <h3>五.简答题</h3>
+        <div class="col-lg-5">
+            <p>1. 简述什么是模型以及模型的表现形式?</p>
+            <textarea class="form-control" id="answer5" rows="3"></textarea>
+        </div>
+    </div>
+    <div class="button">
+        <button class="btn btn-info btn-sm" onclick="sum()">提交</button>
+    </div>
+    <footer class="footer">
+        <p>&copy; Company 2016 by DQing </p>
+    </footer>
+
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

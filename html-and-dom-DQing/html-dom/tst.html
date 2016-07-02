@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function sum() {
+            var total=0;
+            var topic1=document.getElementById("topic1").value;
+            var topic2=document.getElementById("topic2").value;
+            var topic3=document.getElementById("topic3").value;
+            var topic4=document.getElementById("topic4").value;
+            var topic11=document.getElementById("topic11").value;
+
+            if(topic1==='统一建模语言'){
+                total=total+5;
+            }
+            if(topic2==='封装'||topic2==='多态'||topic2==='继承'){
+              total=total+5;
+            }
+            if(topic3 !=topic2&&(topic3==='封装'||topic3==='多态'||topic3==='继承')){
+                total=total+5;
+            }
+            if(topic4!=topic3&&(topic4==='封装'||topic4==='多态'||topic4==='继承')){
+                total=total+5;
+            }
+            var topic5=document.getElementsByName("topic5");
+            for( var i = 0;i<topic5.length;i++){
+                if(topic5[i].checked&&topic5[i].value==='D'){
+                    total=total+5;
+                }
+            }
+            var topic6=document.getElementsByName("topic6");
+            for( var j = 0;j<topic6.length;j++){
+                if(topic6[j].checked&&topic6[j].value==='A'){
+                    total+=5;
+                }
+            }
+            var topic7=document.getElementsByName("topic7");
+            for( var k = 0;k<topic7.length;k++){
+                if(topic7[k].checked&&(topic7[k].value==='A'||topic7[k].value==='B'||topic7[k].value==='D')){
+                    total+=5;
+                }
+            }
+            var topic8=document.getElementsByName("topic8");
+            for( var l = 0;l<topic8.length;l++){
+                if(topic8[l].checked&&(topic8[l].value==='A'||topic8[l].value==='B'||topic8[l].value==='C')){
+                    total+=5;
+                }
+            }
+            var topic9=document.getElementsByName("topic9");
+            for( var m = 0;m<topic9.length;m++){
+                if(topic9[m].checked&&topic9[m]==='错'){
+                    total+=5;
+                }
+            }
+            var topic10=document.getElementsByName("topic10");
+            for( var n = 0;n<topic10.length;n++){
+                if(topic10[n].checked&&topic10[n]==='对'){
+                    total+=5;
+                }
+            }
+            if (topic11 === '模型是对现实世界的简化和抽象,模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体;可以是某种图形;或者是一种数学表达式。') {
+                total=total+40;
+                }
+         document.getElementById("demo").innerHTML=total;
+//            console.log(total);
+            }
+    </script>
+</head>
+<body>
+        <div class="topTitle">
+            <h3>统一建模语言理论测试</h3>
+        </div>
+        <div class="topContent">
+            <p>考试科目：统一建模语言uml &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 时间：100分钟  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   得分：<a id="demo"></a></p>
+            <p>班级：<input type="text" value="" class="classid">
+               学号：<input type="text" value="" class="numid">
+               姓名：<input type="text" value="" class="nameid">
+            </p>
+        </div>
+        <div class="box1">
+            <p> 一.&nbsp;&nbsp;&nbsp;填空题</p>
+            <p>1.UML的中文全称是：<input type="text" value="" id="topic1"/></p>
+            <p>2.对象最突出的特征是：<input type="text" value="" id="topic2"/>
+                <input type="text" value="" id="topic3"/>
+                <input type="text" value="" id="topic4"/></p>
+        </div>
+        <div class="box2">
+            <p>二.单选题</p>
+            <p>1.UML与软件工程的关系是：</p>
+            <input type="radio" name="topic5" value="A" />[A]UML就是软件工程<br>
+            <input type="radio" name="topic5" value="B" />[B]UML参与到软件工程中软件开发过程的几个阶段<br>
+            <input type="radio" name="topic5" value="C" />[C]UML与软件工程无关<br>
+            <input type="radio" name="topic5" value="D" />[D]UML是软件工程的一部分<br>
+            <br>
+            <br>
+
+            <p>2.java语言支持：</p>
+            <input type="radio" name="topic6" value="A" />[A]单继承<br>
+            <input type="radio" name="topic6" value="B" />[B]多继承<br>
+            <input type="radio" name="topic6" value="C" />[C]单继承和多继承都支持<br>
+            <input type="radio" name="topic6" value="D" />[D]单继承和多继承都不支持<br>
+            <br>
+            <br>
+        </div>
+        <div class="box3">
+                <p>三.多选题</p>
+                <p>1.用例的粒度分为以下哪几种</p>
+                    <input type="checkbox" name="topic7" value="A" />[A]概述级<br>
+                    <input type="checkbox" name="topic7" value="B" />[B]需求级<br>
+                    <input type="checkbox" name="topic7" value="C" />[C]用户目标级<br>
+                    <input type="checkbox" name="topic7" value="D" />[D]子功能级<br>
+                <br>
+                <br>
+
+                <p>2.类图由</p>
+                    <input type="checkbox" name="topic8" value="A" />[A]名称(Name)<br>
+                    <input type="checkbox" name="topic8" value="B" />[B]属性(Attribute)<br>
+                    <input type="checkbox" name="topic8" value="C" />[C]操作(Operation)<br>
+                    <input type="checkbox" name="topic8" value="D" />[D]方法(Function)<br>
+                <br>
+                <br>
+
+        </div>
+        <div class="box4">
+                <p>四.判断题</p>
+                <p>1.用例图只是用于和客户交流和沟通的，用于确定需求</p>
+                <input type="radio" name="topic9" value="错" />错<br>
+                <input type="radio" name="topic9" value="对" />对<br>
+                <p>2.在状态图中,终止状态在一个状态图中允许有任意多个</p>
+            　　<input type="radio" name="topic10" value="错" />错<br>
+            　　<input type="radio" name="topic10" value="对" />对<br>
+        </div>
+        <div class="box5">
+                <p>五.简答题</p>
+                <p>1. 简述什么是模型以及模型的表现形式?</p>
+                <textarea cols="20" rows="10" id="topic11" ></textarea>
+        </div>
+        <input type="button" value="提交" id="submit" onclick="sum()">
+
+</body>
+</html>
